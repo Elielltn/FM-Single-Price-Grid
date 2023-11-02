@@ -1,0 +1,125 @@
+:root {
+  --color-cyan: hsl(179, 62%, 43%);
+  --color-bright-yellow: hsl(71, 73%, 54%);
+  --color-light-gray: hsl(204, 43%, 93%);
+  --color-grayish-blue: hsl(218, 22%, 67%);
+  --color-cyan-light: hsl(179, 47%, 52%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  background-color: var(--color-light-gray);
+}
+
+.join {
+  background-color: var(--color-white);
+  grid-column: 1 /-1;
+  padding: 30px 20px 20px 20px;
+  color: var(--color-grayish-blue);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.subscription {
+  background-color: var(--color-cyan);
+  padding: 30px;
+  color: var(--color-white);
+  border-bottom-left-radius: 10px;
+}
+
+.why {
+  background-color: var(--color-cyan-light);
+  padding: 30px;
+  color: var(--color-white);
+  border-bottom-right-radius: 10px;
+}
+
+.grid-container {
+  height: 380px;
+  width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.h1-subscription {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.h1-join {
+  color: var(--color-cyan);
+  margin-bottom: 20px;
+  font-size: 21px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.dollars {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.h2-join {
+  color: var(--color-bright-yellow);
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.p-join {
+  font-size: 15px;
+}
+
+.h1-why {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.p-why {
+  font-size: 16px;
+}
+
+.p-subscription {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#btnSignUp {
+  height: 40px;
+  width: 260px;
+  background-color: var(--color-bright-yellow);
+  border-radius: 5px;
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+#btnSignUp:hover {
+  background-color: var(--color-cyan-light);
+  border: solid 1px var(--color-white);
+  cursor: pointer;
+  color: var(--color-bright-yellow);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
